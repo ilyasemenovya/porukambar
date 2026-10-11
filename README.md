@@ -1,4 +1,4 @@
-> Текущее название проекта: **«По рукам»**. Обновление от 24.09.2026 и ограничения публикации описаны в [REBRAND.md](REBRAND.md). Сайт: https://ilyasemenovya.github.io/mun/
+> Текущее название проекта: **«По рукам»**. Обновление от 24.09.2026 и ограничения публикации описаны в [REBRAND.md](REBRAND.md). Сайт: https://porukambar.ru/
 
 # МУН
 
@@ -10,7 +10,7 @@
 
 ## Публикация
 
-Репозиторий: https://github.com/ilyasemenovya/mun
+Репозиторий: https://github.com/ilyasemenovya/porukambar
 
 В Settings → Pages выбрать Source → GitHub Actions. Сохранённый workflow публикует только папку `site/` после изменений в `main`. Также запуск доступен вручную на вкладке Actions.
 
