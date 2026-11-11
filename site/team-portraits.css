@@ -1,0 +1,43 @@
+
+.team-portraits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,5vw,72px);max-width:1040px;margin:0 auto}
+.team-person{min-width:0}.team-portrait{position:relative;display:block;width:100%;aspect-ratio:3/4;border:0;padding:0;overflow:hidden;background:#eae3d3;color:#2a2b2d;cursor:pointer;border-radius:3px}
+.team-frame{position:absolute;inset:0;background-size:200% 100%;background-repeat:no-repeat;pointer-events:none}
+.team-normal{background-position:left center}.team-surprise{background-position:right center;opacity:0;transition:opacity .24s ease}
+.team-portrait[aria-pressed="true"] .team-surprise,.team-portrait:focus-visible .team-surprise{opacity:1}
+@media(hover:hover){.team-portrait:hover .team-surprise{opacity:1}}
+.team-portrait:focus-visible{outline:3px solid #a83b16;outline-offset:5px}
+.team-hint{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);white-space:nowrap;background:#eae3d3ed;padding:8px 12px;border-radius:2px;font:500 11px/1.3 'Montserrat',sans-serif}
+.team-person-copy{padding:22px 0 0;border-top:1px solid #2a2b2d;margin-top:14px}.team-person-copy .team-role{color:#a83b16;font-size:12px;font-weight:600;margin:0 0 8px}
+.redesign .team-person-copy h3{font-family:'Russo One',sans-serif;font-weight:400;font-size:clamp(25px,3vw,36px);line-height:1.2;text-transform:none;margin:0 0 12px}.team-person-copy>p:last-child{font-size:14px;line-height:1.65;margin:0;max-width:38ch}
+@media(max-width:600px){.team-portraits{grid-template-columns:1fr;gap:40px;max-width:380px}.team-person-copy{padding-top:18px}.team-hint{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.team-surprise{transition:none}}
+
+.team-person>.team-role-banner{margin:0 0 16px;padding:14px 18px;background:#a83b16;color:#fff8eb;font-family:"Russo One",sans-serif;font-size:clamp(25px,3vw,39px);font-weight:400;line-height:1.15;letter-spacing:.015em;text-transform:uppercase;text-align:center}
+@media(max-width:600px){.team-person>.team-role-banner{font-size:clamp(24px,7vw,32px);padding:13px 12px;margin-bottom:12px}}
+
+.team-hint{display:flex;align-items:center;gap:8px;bottom:16px;left:auto;right:12px;transform:rotate(-4deg);background:#a83b16;color:#fff8eb;padding:10px 14px;border-radius:3px;font-size:13px;font-weight:600;box-shadow:3px 3px 0 #2a2b2d;pointer-events:none}.team-hint-arrow{font-size:30px;line-height:1}.team-hint-touch{display:none}
+@media(hover:none),(pointer:coarse),(max-width:600px){.team-hint-desktop{display:none}.team-hint-touch{display:inline}.team-hint{font-size:13px;bottom:14px;right:12px}.team-hint-arrow{font-size:28px}}
+
+/* Compact team cards; keep the existing portrait interaction. */
+.redesign .team-section{padding-top:32px;padding-bottom:36px}
+.team-heading{max-width:760px;margin:0 auto 24px}
+.team-heading .eyebrow{font-size:11px;letter-spacing:.12em}
+.redesign .team-heading h2{font-size:clamp(28px,3vw,42px);line-height:1.12;margin-top:8px}
+.team-portraits{max-width:600px;gap:36px}
+.team-person>.team-role-banner{font-size:24px;padding:9px 12px;margin-bottom:10px;letter-spacing:0}
+.team-person-copy{padding-top:12px;margin-top:10px}
+.redesign .team-person-copy h3{font-size:23px;margin-bottom:8px}
+.team-person-copy>p:last-child{font-size:13px;line-height:1.55;max-width:none}
+.team-hint{font-size:10px;padding:6px 9px;bottom:10px;right:10px;gap:5px;box-shadow:2px 2px 0 #2a2b2d}
+.team-hint-arrow{font-size:22px}
+@media(max-width:600px){
+ .redesign .team-section{padding-top:28px;padding-bottom:32px}
+ .team-heading{max-width:320px;margin-bottom:20px}
+ .redesign .team-heading h2{font-size:28px}
+ .team-portraits{max-width:260px;gap:28px}
+ .team-person>.team-role-banner{font-size:21px;padding:8px 10px;margin-bottom:8px}
+ .redesign .team-person-copy h3{font-size:21px}
+ .team-person-copy>p:last-child{font-size:16px;line-height:1.55}
+ .team-hint{font-size:10px;padding:6px 9px;bottom:10px;right:10px}
+ .team-hint-arrow{font-size:22px}
+}

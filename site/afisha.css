@@ -1,0 +1,25 @@
+
+
+.redesign .concert-section{background:#eae3d3;color:#2a2b2d;font-family:ConcertMontserrat,sans-serif;scroll-margin-top:24px}
+.concert-heading{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:44px}
+.redesign .concert-section h1,.redesign .concert-section h2,.redesign .concert-section h3{font-family:ConcertRusso,sans-serif;font-weight:400;letter-spacing:-.02em;color:#2a2b2d}
+.redesign .concert-section h1,.redesign .concert-section h2{font-size:clamp(38px,5vw,72px);line-height:1.05;margin:14px 0 0}
+.concert-heading>p{max-width:340px;line-height:1.65;margin:0}
+.concert-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+.concert-poster{display:block;overflow:hidden;background:#2a2b2d}
+.concert-poster img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:contain}
+.concert-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:24px 0 12px;font-size:14px}
+.concert-meta>span{font-weight:bold}
+.redesign .concert-card h3{font-size:clamp(30px,3vw,44px);margin:0 0 14px;line-height:1.15}
+.concert-program{font-size:15px;line-height:1.8;margin:0 0 24px}
+.redesign .concert-card .button{background:#2a2b2d;color:#eae3d3;border:1px solid #2a2b2d;font-family:ConcertMontserrat,sans-serif;font-size:14px;min-height:50px;width:100%;text-align:center;justify-content:center}
+.redesign .concert-card .button:hover{background:#ef5523;color:#2a2b2d}
+.concert-section a:focus-visible{outline:3px solid #ef5523;outline-offset:5px}
+.concert-footer{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid #2a2b2d40;margin-top:40px;padding-top:24px}
+.concert-footer p{font-size:14px;margin:0;line-height:1.6}
+.concert-footer a{font-family:ConcertRusso,sans-serif;font-size:28px;white-space:nowrap;color:inherit}
+@media(max-width:700px){.concert-heading{display:block;margin-bottom:30px}.concert-heading>p{margin-top:22px;font-size:14px}.concert-grid{grid-template-columns:1fr;gap:44px}.concert-footer{align-items:start;flex-direction:column}.concert-meta{margin-top:20px;font-size:13px}.redesign .concert-section{padding:56px 24px}}
+
+.concert-back{display:inline-block;color:inherit;margin-bottom:32px;font-size:14px}.concert-teaser .concert-heading{margin-bottom:0}.concert-teaser .concert-heading>div>p:not(.eyebrow){line-height:1.8;margin:0 0 24px}.concert-teaser .button{font-family:ConcertMontserrat,sans-serif;font-size:14px}.afisha-page .concert-section{min-height:70vh}@media(max-width:700px){.concert-teaser .concert-heading>div+div{margin-top:28px}}
+.redesign.afisha-page main .concert-section{background:#eae3d3;color:#2a2b2d}
+.redesign.afisha-page main .concert-section p,.redesign.afisha-page main .concert-section .eyebrow{color:#2a2b2d}

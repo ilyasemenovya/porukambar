@@ -1,5 +1,5 @@
-@font-face{font-family:Oswald;src:url('assets/redesign/Oswald.ttf') format('truetype');font-weight:200 700;font-display:swap}
-.brand-wordmark{display:block;font-family:Oswald,'Arial Narrow',sans-serif;font-size:25px;font-weight:700;line-height:.95;letter-spacing:-.045em;text-align:center;color:inherit}
+
+.brand-wordmark{display:block;font-family:"Russo One",'Arial Narrow',sans-serif;font-size:25px;font-weight:700;line-height:.95;letter-spacing:-.045em;text-align:center;color:inherit}
 .footer-brand{width:max-content}
 .footer-brand .brand-wordmark{font-size:38px;text-align:left}
 .redesign .bar-hero h1{font-size:clamp(5.8rem,16vw,15rem);line-height:1.06;letter-spacing:-.055em;margin:18px 0 26px;white-space:nowrap}
@@ -14,9 +14,9 @@
 .redesign .menu-switch a[aria-current=true]{color:var(--paper)}
 .redesign .game-scene>span{font-size:clamp(1.4rem,2.5vw,2.6rem);gap:16px;line-height:1.25;padding-bottom:8px}
 .redesign .game-scene img{object-position:center;aspect-ratio:1.2}
-.game-body h1,.game-body h2,.game-body .play-button{font-family:Oswald,'Arial Narrow',sans-serif}
+.game-body h1,.game-body h2,.game-body .play-button{font-family:"Russo One",'Arial Narrow',sans-serif}
 .game-heading h1{text-transform:uppercase;font-size:clamp(2.5rem,5vw,4.3rem)}
 .game-header .brand-wordmark{font-size:28px}
-.game-body .game-footer{color:#d3c1ae}
+.game-body .game-footer{color:#eae3d3}
 @media(max-width:600px){.brand-wordmark{font-size:23px}.redesign .bar-hero h1{font-size:18.8vw;margin:22px 0}.redesign .bar-hero>.eyebrow{font-size:.57rem}.redesign .hero-tagline{font-size:.85rem}.redesign .evening-copy h2{font-size:3.7rem}.redesign .collage-caption{font-size:1.58rem}.redesign .menu-switch{gap:9px}.redesign .menu-switch a{padding:10px 17px;font-size:1.05rem}.redesign .game-scene img{aspect-ratio:1.35}}
 @media(max-width:360px){.brand-wordmark{font-size:20px}.redesign .header{grid-template-columns:44px minmax(0,1fr) auto}.redesign .bar-game-copy h2{font-size:2.9rem}.redesign .afisha-content h2{font-size:3rem}}
