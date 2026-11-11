@@ -1,0 +1,772 @@
+[
+  {
+    "path": "contacts.html",
+    "sha256": "697dd785261c53b43f1c593a22ee4037c87b5b0cedafc67b7e949ccd57de18ee",
+    "bytes": 9457
+  },
+  {
+    "path": "game-core.mjs",
+    "sha256": "1853c03e1229eac0b8f23b065d3d4724d69924d385ee62b7ec9dbe32467cffc9",
+    "bytes": 3818
+  },
+  {
+    "path": "brand-system.css",
+    "sha256": "f09ac4e5c7238059b85a379c5bf7de127f1ae55c5210c509e136712848140010",
+    "bytes": 21834
+  },
+  {
+    "path": "index.html",
+    "sha256": "bdac4fa76ccca0cc45ee357c69675a5c8f79290e6e2b7a4a63f68180d8cfbdf4",
+    "bytes": 30278
+  },
+  {
+    "path": "guest-chat.js",
+    "sha256": "e31fea44c307461a3b3d2aa7320702e7a766c712ae6c643aa6b4cec750f47896",
+    "bytes": 10214
+  },
+  {
+    "path": "styles.css",
+    "sha256": "09e76f0416659482accf8807d194f3a2fe1f45ba3e0aeec43167c5e7674484b4",
+    "bytes": 14196
+  },
+  {
+    "path": "about.html",
+    "sha256": "6d103267506fa10c506e62f36bfcff7ae47b95075de26bd7d0a20c2884c07b87",
+    "bytes": 11568
+  },
+  {
+    "path": "reviews.js",
+    "sha256": "846db4122470da6663246f1d623b28c613468ba24ae58b751d829780cd461c6e",
+    "bytes": 6679
+  },
+  {
+    "path": "team-portraits.js",
+    "sha256": "b280917ad8757eb130b2070f761845041620eabeb77c7dec7dd4b818a9d6b790",
+    "bytes": 242
+  },
+  {
+    "path": "brand-ribbon.js",
+    "sha256": "a65926dc1bff2daaf2a37c8d17bddb4581f5d76515f23892f90c75bcc77bc354",
+    "bytes": 853
+  },
+  {
+    "path": "consent.html",
+    "sha256": "4739ea1c48d685349697a6e1a57d406fc09877d44bf425364111504caf5a65cd",
+    "bytes": 9562
+  },
+  {
+    "path": "game-food.mjs",
+    "sha256": "fbdae601a7491f66b1b37a05cb3b4260941c019eea4e9714053b0dde22c23503",
+    "bytes": 2416
+  },
+  {
+    "path": "redesign.css",
+    "sha256": "82b919791c183a0e010d2f1836b25b2dbd1beccb4356a6b3a46d80fbe7e4baa2",
+    "bytes": 24287
+  },
+  {
+    "path": "menu.html",
+    "sha256": "bf19870fa8530d8c188c786463fc2323adcc0ae20d4b8ce4b35dfa39b00e3e4e",
+    "bytes": 6361
+  },
+  {
+    "path": "team-portraits.css",
+    "sha256": "a6f0107ef0e972f5d2967eec0d494665523891cb36c04aef99eb4e336800d420",
+    "bytes": 3927
+  },
+  {
+    "path": "game.css",
+    "sha256": "4ea1b74db2863413b6ccaa5075fd6bf47fd743446915625c9471ea9b62c71af1",
+    "bytes": 6383
+  },
+  {
+    "path": "hookah.css",
+    "sha256": "e3e66ac099425985a76fe9a4e0f1f02963974f95a5af0baba6c557cce2452910",
+    "bytes": 1195
+  },
+  {
+    "path": "reviews.css",
+    "sha256": "824e20ac2e8ce5d3519102e42225458b284ea02577731f3015f846890a79a947",
+    "bytes": 2801
+  },
+  {
+    "path": "gallery.html",
+    "sha256": "4325eb97b42bf43695c02a520b1c9527a18bb432dd514f35f1d2cfaea0642824",
+    "bytes": 1323
+  },
+  {
+    "path": ".nojekyll",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "bytes": 1
+  },
+  {
+    "path": "legal.css",
+    "sha256": "21561e4f6a2435e97a138d1c7ecd596931f51e3701a033fdf6783502f20a8dfe",
+    "bytes": 605
+  },
+  {
+    "path": "afisha.html",
+    "sha256": "a67082d55bbb88d64c975f3da54fa6925188e8729efc861b613cf9f398811b9c",
+    "bytes": 7792
+  },
+  {
+    "path": "menu.json",
+    "sha256": "396ac65eb8ae981d303eeda1bee8ea2de6ed96160911c0600c8376f974f2db63",
+    "bytes": 28726
+  },
+  {
+    "path": "afisha.css",
+    "sha256": "e1982c0df8aa095002c98538864014e7e6c97f08938ecff41f1b0684736ac92b",
+    "bytes": 2770
+  },
+  {
+    "path": "chat.css",
+    "sha256": "f1ddc05d4e2e6cfa62154c012311d0e2d3cd3f34ef06870871792486c9153da9",
+    "bytes": 11854
+  },
+  {
+    "path": "boss-contact.js",
+    "sha256": "8f212d199e1173d9e99dbf0e3f0caac1436dddb70a8dc6d1ab2377e387f1bef9",
+    "bytes": 987
+  },
+  {
+    "path": "game.html",
+    "sha256": "38f789671e0447a249fb15cf52cf1bd1a1a7994950d2c0d90b63ff035ff523de",
+    "bytes": 5694
+  },
+  {
+    "path": "game.mjs",
+    "sha256": "21a6e55d27def4ec035350040c6844dbce27cdeb9d78741c22d94ad0f844c0f5",
+    "bytes": 14038
+  },
+  {
+    "path": "brand.css",
+    "sha256": "f5d02214c6b971f79e8b40d95ad0415242ad7f8016ea7a7f8c91f6ad89269b8d",
+    "bytes": 2059
+  },
+  {
+    "path": "sitemap.xml",
+    "sha256": "c4e31eac919dae3b4a99e6f3cff733c0b6000db31a2bee7d5cc2055c28f1b325",
+    "bytes": 411
+  },
+  {
+    "path": "menu-coming.css",
+    "sha256": "4e83b3b457458c02ce4a8e9beea7620d741117f3d8b476901799d6baec6f913d",
+    "bytes": 709
+  },
+  {
+    "path": "game-villain.mjs",
+    "sha256": "e2386cb46fedc558f8a14ca74979c5ce9719a3206517315cc1b481f2808a354f",
+    "bytes": 2273
+  },
+  {
+    "path": "delivery.html",
+    "sha256": "eca5a2c5fc402c197bf46e6412bfd467e716806a81ebcc1ba86f80c3e364d509",
+    "bytes": 7042
+  },
+  {
+    "path": "site.js",
+    "sha256": "924cf5a73f95d613a0cb5289fa97a0093e6f2400b2712020ccd6fca46d850092",
+    "bytes": 7990
+  },
+  {
+    "path": "robots.txt",
+    "sha256": "84953b861f5a3a7f33cdad1a182c6bb42a928ad1e9ce6f7b292994eb778c6d6c",
+    "bytes": 67
+  },
+  {
+    "path": "opening-ticker.js",
+    "sha256": "daf4615cb1b9ffb6f096d8efa0b16d0e1f3737ff476ffeec72018ca8185b7b3f",
+    "bytes": 857
+  },
+  {
+    "path": "scroll-logo.js",
+    "sha256": "dfdd45fb72fdbfd0099afa151f8acaebf8b21f9180189c3d389e5aa0dc5c3c0d",
+    "bytes": 884
+  },
+  {
+    "path": "structure.css",
+    "sha256": "512a2bca9b3dd72974a0577248681a709f7f9be22c63ce715a3259213bc7c5ce",
+    "bytes": 6861
+  },
+  {
+    "path": "privacy.html",
+    "sha256": "6a284053d86ae8801c1ea0a101c3f8ade18ccda092285320d94ad9bd24dbcf43",
+    "bytes": 13273
+  },
+  {
+    "path": "bonus/index.html",
+    "sha256": "42ac74f8d863a3f0bc1e12cc5b5a87d0e43b60cde9cc8005cc9c65c9eb472845",
+    "bytes": 868
+  },
+  {
+    "path": "new-year/index.html",
+    "sha256": "4a77f5781caee24e5f2fd6f27819e2ead37f34fbe4f7d44c33ea2acccec06dc9",
+    "bytes": 10653
+  },
+  {
+    "path": "new-year/menu-data.js",
+    "sha256": "9da3dc15a7a8d9fe5f5deeac3a1438755b84a39f6c7cfe459878be26abab5583",
+    "bytes": 5402
+  },
+  {
+    "path": "new-year/page.js",
+    "sha256": "12f399dbe5bc6671aae74e0e6c023f8e645fd82bfa3a01a6969a044414b0eeb8",
+    "bytes": 6660
+  },
+  {
+    "path": "new-year/styles.css",
+    "sha256": "8015044651c42516042d297aa6709a9730a3186137b8b66a3607f749aeaa04d2",
+    "bytes": 31716
+  },
+  {
+    "path": "assets/lounge.jpg",
+    "sha256": "e6ee0802c961b94ea50ee207852d6a828520074854a94bcf3261d1d79cc4bfb3",
+    "bytes": 442973
+  },
+  {
+    "path": "assets/mun-logo.svg",
+    "sha256": "6001fc84e02d31e12069031f1d249bd3139ae3c0759c565a3a64fc7fefdbd327",
+    "bytes": 2165
+  },
+  {
+    "path": "assets/Manrope.ttf",
+    "sha256": "d0639be45d0af36e798172419d7bd173c4bd4f29e2b76cbb69db1d11bf8b0a40",
+    "bytes": 165420
+  },
+  {
+    "path": "assets/private-room.jpg",
+    "sha256": "0894a93c8d1673764925dc832ce438a04d8ce5a3cce83517ea7bb72b4a05e03c",
+    "bytes": 257617
+  },
+  {
+    "path": "assets/banquet-menu.pdf",
+    "sha256": "f4eed44522316ea1dad69ce4f010d30a5c840d5371d0275209ad6c3485e2eae2",
+    "bytes": 3581476
+  },
+  {
+    "path": "assets/moon-detail.jpg",
+    "sha256": "e2e3896ac7d572c4f375cb979d8a8dcf75039c7469575e062a86ac54ac516c80",
+    "bytes": 115262
+  },
+  {
+    "path": "assets/porukam-favicon.svg",
+    "sha256": "1262b25d097e78c7baf71ecbe0b4fbc1b11d6501005cd1d2f2a51b952bf65be6",
+    "bytes": 251
+  },
+  {
+    "path": "assets/Raleway.ttf",
+    "sha256": "8bbcc3eb8275c388f4bcd998832f8a4b943eadbaf6a595205312774b5951aefb",
+    "bytes": 312352
+  },
+  {
+    "path": "new-year/assets/holiday-cursor.svg",
+    "sha256": "e60a0af6d5538953f662dcb57bf144f28b645734afd19f7ad7f71bddea5d1d8a",
+    "bytes": 510
+  },
+  {
+    "path": "new-year/assets/lounge.jpg",
+    "sha256": "e6ee0802c961b94ea50ee207852d6a828520074854a94bcf3261d1d79cc4bfb3",
+    "bytes": 442973
+  },
+  {
+    "path": "new-year/assets/menu-3500.pdf",
+    "sha256": "af5213178ceb0284d11103b7b9039b25cd69a279ace27ae7147e6ea216d700e4",
+    "bytes": 7842197
+  },
+  {
+    "path": "new-year/assets/mun-logo.svg",
+    "sha256": "6001fc84e02d31e12069031f1d249bd3139ae3c0759c565a3a64fc7fefdbd327",
+    "bytes": 2165
+  },
+  {
+    "path": "new-year/assets/christmas-mobile-hero.png",
+    "sha256": "5dfc42ca1dcf9e082142bb137e8db9cda90e24b7d46d5dd181d98906dd746394",
+    "bytes": 2394243
+  },
+  {
+    "path": "new-year/assets/burgundy-christmas.png",
+    "sha256": "be6a8543355f306924ba5b9f882f3f411ab15b9379300ff2bd03fe195f4ac460",
+    "bytes": 2061287
+  },
+  {
+    "path": "new-year/assets/Manrope.ttf",
+    "sha256": "d0639be45d0af36e798172419d7bd173c4bd4f29e2b76cbb69db1d11bf8b0a40",
+    "bytes": 165420
+  },
+  {
+    "path": "new-year/assets/fire-goat.png",
+    "sha256": "94e84e12a7387dcd8a514e5c6991d128ee0ddffa9bf0238118c46d14f046867c",
+    "bytes": 1311724
+  },
+  {
+    "path": "new-year/assets/festive-ivory-background.png",
+    "sha256": "78b04f45669fbdaa6e8892c0a7e77d86029eaf701c4326ca2f44f0e2e787d700",
+    "bytes": 2792470
+  },
+  {
+    "path": "new-year/assets/Oswald.ttf",
+    "sha256": "5b38c246e255a12f5712d640d56bcced0472466fc68983d2d0410ec0457c2817",
+    "bytes": 172088
+  },
+  {
+    "path": "new-year/assets/retro-christmas.png",
+    "sha256": "3917566fffb6274e4b3ba2017a0fb7471532c49a8d74a24288b1f752fe645b3f",
+    "bytes": 2091641
+  },
+  {
+    "path": "new-year/assets/burgundy-mobile.png",
+    "sha256": "9a117833d641033813a5de8014f42057ed5dc92360c88b94504db580a26326e7",
+    "bytes": 1958206
+  },
+  {
+    "path": "new-year/assets/menu-4000.pdf",
+    "sha256": "ca34e09a0270fed5df140ed81b64c92c43721229c1634344254eae18510d480a",
+    "bytes": 8879027
+  },
+  {
+    "path": "new-year/assets/private-room.jpg",
+    "sha256": "0894a93c8d1673764925dc832ce438a04d8ce5a3cce83517ea7bb72b4a05e03c",
+    "bytes": 257617
+  },
+  {
+    "path": "new-year/assets/banquet-menu.pdf",
+    "sha256": "19ff2c435c3bd34d22db77f10eb78e298a956323060b7e378c938c69e7b74c91",
+    "bytes": 28685
+  },
+  {
+    "path": "new-year/assets/Raleway.ttf",
+    "sha256": "8bbcc3eb8275c388f4bcd998832f8a4b943eadbaf6a595205312774b5951aefb",
+    "bytes": 312352
+  },
+  {
+    "path": "new-year/assets/Oswald-OFL.txt",
+    "sha256": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652",
+    "bytes": 4483
+  },
+  {
+    "path": "new-year/assets/dishes/dish-20.webp",
+    "sha256": "622a0e352809314f9dcedb9ac07849935d6cf914078d8547b4494ada7992ece0",
+    "bytes": 172458
+  },
+  {
+    "path": "new-year/assets/dishes/dish-16.webp",
+    "sha256": "6bb48aadb487d0572f748a0a910f84156e4bc1238e000b02a81c2ea48701bf87",
+    "bytes": 187322
+  },
+  {
+    "path": "new-year/assets/dishes/dish-17.webp",
+    "sha256": "4d925e85ed9914ab22ebcf636c20ea8bcef505ffc40aa7da807d6bac6b115dc8",
+    "bytes": 165102
+  },
+  {
+    "path": "new-year/assets/dishes/dish-01.webp",
+    "sha256": "adecb9ec46c09bd5050c6d3f27d648adbc2614f9b5c5ee11c67d8f2d4a83b8d2",
+    "bytes": 184532
+  },
+  {
+    "path": "new-year/assets/dishes/dish-06.webp",
+    "sha256": "d44ba46b09cde8b86e166a89f5f8fd51b69e75b869821689694c9dcdb3d7bfd1",
+    "bytes": 172054
+  },
+  {
+    "path": "new-year/assets/dishes/dish-10.webp",
+    "sha256": "a6054f851a036680606c0ba650e446fb4de8c306e900e4ad5bc21c71d88b5a6a",
+    "bytes": 184150
+  },
+  {
+    "path": "new-year/assets/dishes/dish-11.webp",
+    "sha256": "a26c5d257d30d0e1db649e4dc115e7a6e084eac66ba9b3905e22cf1deb16a22f",
+    "bytes": 142022
+  },
+  {
+    "path": "new-year/assets/dishes/dish-07.webp",
+    "sha256": "32fd5e6d16bf8a3014d08bf43a49c498e576f1033cc8a98d4dc6e030c5e8d981",
+    "bytes": 158102
+  },
+  {
+    "path": "new-year/assets/dishes/dish-12.webp",
+    "sha256": "aabced346c6aa30458e7b85a4129b8a9176bbafba17ae3592b428933357b5922",
+    "bytes": 189932
+  },
+  {
+    "path": "new-year/assets/dishes/dish-04.webp",
+    "sha256": "ea4574a14a33ec6231680d1076de367ef059de30bbae7a471e0a442265944661",
+    "bytes": 141380
+  },
+  {
+    "path": "new-year/assets/dishes/dish-08.webp",
+    "sha256": "de001a8affc9f10d61adc590cac89e134e84b958d165f479d6a980cd930b4b7d",
+    "bytes": 153380
+  },
+  {
+    "path": "new-year/assets/dishes/dish-09.webp",
+    "sha256": "0cf4e366b25e5705df79dbff6aa323f70ddb5ff27da10c36ca0b5be4d3f75082",
+    "bytes": 169030
+  },
+  {
+    "path": "new-year/assets/dishes/dish-05.webp",
+    "sha256": "cb2550e6893e65ef7cfb0e0f1289dcc24d51310ad3db1cfaf42d5c5794207765",
+    "bytes": 197682
+  },
+  {
+    "path": "new-year/assets/dishes/dish-13.webp",
+    "sha256": "5065cf29f9719d7840d2555e0c17c023024b3b9d970fa2d22945407b85ad0a0d",
+    "bytes": 151644
+  },
+  {
+    "path": "new-year/assets/dishes/dish-18.webp",
+    "sha256": "c20e46a17ad28c28c25731249427269ead447e2d88233332eda0a1df7030f47d",
+    "bytes": 146850
+  },
+  {
+    "path": "new-year/assets/dishes/dish-14.webp",
+    "sha256": "0096d39ebb3bafe38262f200654ddbb070b328f2710369a506714f50a471f6d1",
+    "bytes": 134654
+  },
+  {
+    "path": "new-year/assets/dishes/dish-02.webp",
+    "sha256": "85df3a7dde9565948278c6330f05220d21dd91a13284cb30b698d7b880bac95c",
+    "bytes": 171040
+  },
+  {
+    "path": "new-year/assets/dishes/dish-03.webp",
+    "sha256": "15884cec843fa8d7e67be3b64e18f2c1f1e2a7ea636fd664644c38bb0dc668f0",
+    "bytes": 175454
+  },
+  {
+    "path": "new-year/assets/dishes/dish-15.webp",
+    "sha256": "0bbcc566b5edc6e4159e3355a6fd35d568cb92a677b3867d5504701f0c09c47c",
+    "bytes": 156386
+  },
+  {
+    "path": "new-year/assets/dishes/dish-19.webp",
+    "sha256": "e9981cf1985746770a75a6e0a68d950df0392122dfc276b2cfa19396d338791c",
+    "bytes": 184082
+  },
+  {
+    "path": "assets/brand/dynamic-original.png",
+    "sha256": "2d599453fa32fac446d15016c32ad03f8b4c86e75e2e7d776cc6d6e9dacfeb1d",
+    "bytes": 66640
+  },
+  {
+    "path": "assets/brand/hand-top-continuous-light.svg",
+    "sha256": "ae15aa70af82d4aa3e43bb3089ff2eff9b62485063bafe20a6df7fec67587bc3",
+    "bytes": 782
+  },
+  {
+    "path": "assets/brand/hand-top.svg",
+    "sha256": "d05630c933983984d13f1550e5e1ace4fe0626206d30781b4f73ebaee870b033",
+    "bytes": 45930
+  },
+  {
+    "path": "assets/brand/wordmark-line.svg",
+    "sha256": "40e9dae1cdfa325629694f2f43639be74122df91b5ab6c5dcdb3d5065e649ea8",
+    "bytes": 3373
+  },
+  {
+    "path": "assets/brand/hand-bottom-continuous-light.svg",
+    "sha256": "337f24e4a415a719b08118b254b2ab4daef3beb53d2130314628cd8b1f90a3a3",
+    "bytes": 714
+  },
+  {
+    "path": "assets/brand/hand-top-original-orange.svg",
+    "sha256": "7851df154e3cddfcf737f4b55c0f491d3a87a0d28462fcdafc4ad5410582eba0",
+    "bytes": 45930
+  },
+  {
+    "path": "assets/brand/hand-top-clean.svg",
+    "sha256": "0875a956e64c9ef339e2222581396cafb735af02ab1f9761b4597f91001fb506",
+    "bytes": 645
+  },
+  {
+    "path": "assets/brand/hand-top-original-light.svg",
+    "sha256": "4dac941171f9a4a6f92cb376d952b37f0481b520d6225e59a4e12d657a76d351",
+    "bytes": 45930
+  },
+  {
+    "path": "assets/brand/hand-bottom-original-orange.svg",
+    "sha256": "b896352f95497fd00aad3d6ce3c68f74e39380ba8675eccb1e042bb43c15a1e6",
+    "bytes": 36932
+  },
+  {
+    "path": "assets/brand/logo-dark.svg",
+    "sha256": "1571b95b96bc6bd33f49b1f159bec82834b39b4f4d55dfa20f83ffd79864526f",
+    "bytes": 4922
+  },
+  {
+    "path": "assets/brand/hand-bottom-original-light.svg",
+    "sha256": "5d598c73ef393b07c6d02b164994ec1e8a420a965525f61c2230b62cfd756c67",
+    "bytes": 36932
+  },
+  {
+    "path": "assets/brand/hand-bottom-clean.svg",
+    "sha256": "823720a4dd513243dc3f95554e482f8884ea02d3170cb4009b6ae5c9463c99a7",
+    "bytes": 675
+  },
+  {
+    "path": "assets/brand/montserrat-semibold.ttf",
+    "sha256": "b4e1563393d73fdff491a869441245aef31add2ec03d9c97a6dae4de07c52fd0",
+    "bytes": 454716
+  },
+  {
+    "path": "assets/brand/russo-one.ttf",
+    "sha256": "bc0abcc660bd8b7ad3000ecb2898a27c58a29a50f7ec81652fa12e75148d09df",
+    "bytes": 39124
+  },
+  {
+    "path": "assets/brand/hand-bottom.svg",
+    "sha256": "0967f11e362c0de10698c09302b476a2ab64dcb468804e6c22f0629972e95a6a",
+    "bytes": 36932
+  },
+  {
+    "path": "assets/brand/wordmark-dark.svg",
+    "sha256": "dfb29cdcc3b529d0c71cf1e6ec2646e87d959fd8f16f14905038eb4ba074c31e",
+    "bytes": 3137
+  },
+  {
+    "path": "assets/brand/montserrat-regular.ttf",
+    "sha256": "3e8abe50c44c82e2242e97d1ec8c0d385c4890cdc50447bcdb8605c81a38cfb2",
+    "bytes": 445928
+  },
+  {
+    "path": "assets/brand/wordmark-line-light.svg",
+    "sha256": "6a69e60a375c3ea4f10cdaecf553c68c40046235e9d5412e3c3540439bafc24b",
+    "bytes": 3373
+  },
+  {
+    "path": "assets/brand/hand-bottom-gradient.svg",
+    "sha256": "4bd1639e631a71cfb0b12ac5b1d482843e280978c57ac3f6f1b288cfa82da772",
+    "bytes": 37604
+  },
+  {
+    "path": "assets/brand/logo-light.png",
+    "sha256": "86a6fa934593057b278bf16506ad9bbbc54048e8cbf80261be2a4a845888fe23",
+    "bytes": 61191
+  },
+  {
+    "path": "assets/brand/hand-top-gradient.svg",
+    "sha256": "506204edbcca95302cfe9554fbd3a1b5fd98bff2d1ab1f49783c983f2b8bc57b",
+    "bytes": 46634
+  },
+  {
+    "path": "assets/afisha/hitoboi-20-nov.png",
+    "sha256": "9012618befaaa9539c654d86a7a95e6a7edcfe48c81a05da52ce6f7c306f2651",
+    "bytes": 1163045
+  },
+  {
+    "path": "assets/afisha/hitoboi-20-nov-v2.png",
+    "sha256": "bce06f694d62b07386b61334c779fbf4a63a67541657018eeb94e6b6357f9ed5",
+    "bytes": 3247143
+  },
+  {
+    "path": "assets/afisha/weekend-21-nov.png",
+    "sha256": "4f8e2b2b1fb871b84a065ff222c4cfc9b2964a2ddc3cdff7430ab788a425d422",
+    "bytes": 1273007
+  },
+  {
+    "path": "assets/afisha/russo-one.ttf",
+    "sha256": "bc0abcc660bd8b7ad3000ecb2898a27c58a29a50f7ec81652fa12e75148d09df",
+    "bytes": 39124
+  },
+  {
+    "path": "assets/afisha/montserrat-regular.ttf",
+    "sha256": "3e8abe50c44c82e2242e97d1ec8c0d385c4890cdc50447bcdb8605c81a38cfb2",
+    "bytes": 445928
+  },
+  {
+    "path": "assets/afisha/weekend-21-nov-v2.png",
+    "sha256": "a0086ff5e31a27c92c624c34410459bad9b40327a33169eef0adcb2e91bd3ee2",
+    "bytes": 3402573
+  },
+  {
+    "path": "assets/game/astronaut.png",
+    "sha256": "4723f4a39048b84e081ab5caf1bdd4f6e7e13870b00e7bbb29a6e76184d5fc1f",
+    "bytes": 696556
+  },
+  {
+    "path": "assets/game/waiter-frames.json",
+    "sha256": "662eaf4e8d56d13df58e59fc57585e3a6f96a24bb3e48c03ce52eba725c1564e",
+    "bytes": 369
+  },
+  {
+    "path": "assets/game/bar-interior.png",
+    "sha256": "2b775707237975e5fe63e25922942ad4759274714d9ed065b145fb94f71db6bf",
+    "bytes": 1718683
+  },
+  {
+    "path": "assets/game/moon.png",
+    "sha256": "738abd3e4484cb2e7e1530baa81aa4b86e4c4cce0217152884b33c7e5dea5363",
+    "bytes": 1247367
+  },
+  {
+    "path": "assets/game/waiter.png",
+    "sha256": "35d998f8a344511a8287883e074c68ec99829862066c631dfdf91601d308b9f4",
+    "bytes": 702037
+  },
+  {
+    "path": "assets/game/frames.json",
+    "sha256": "0167efc34c47b7e723ab410f9758cca5744b31cfe5ead413a065dc4de2106f89",
+    "bytes": 202
+  },
+  {
+    "path": "assets/game/helmet.png",
+    "sha256": "b878a7dc4168481942c024e3be3e6b7e9dc3dde1bde944bbb12806b30692d327",
+    "bytes": 630503
+  },
+  {
+    "path": "assets/redesign/list.svg",
+    "sha256": "eebf2179178a5d4e93097a35f6a02efec45db6a88c1fbbc027fe81a167fd910f",
+    "bytes": 269
+  },
+  {
+    "path": "assets/redesign/microphone-stage.svg",
+    "sha256": "707395fb1c9a90bb9daf8166855cc8696e9ed3fea48d32def0cc3a5629a78f25",
+    "bytes": 441
+  },
+  {
+    "path": "assets/redesign/mural-company.webp",
+    "sha256": "054b15fec51c1d2674670f5ec4d6f03a603595f8169d66ddd20ebddea43c14c9",
+    "bytes": 487400
+  },
+  {
+    "path": "assets/redesign/hookah.png",
+    "sha256": "ed76ab32a08168ee8df823afa2c35b02a7f5f0ea5c0af2238adcb62897b4b648",
+    "bytes": 854171
+  },
+  {
+    "path": "assets/redesign/hookah-company-transparent.png",
+    "sha256": "f621bfc256719b366cbf1d095ceb36ca1721ea6b3801c066c8fdc84694877ac0",
+    "bytes": 2482612
+  },
+  {
+    "path": "assets/redesign/x.svg",
+    "sha256": "d540487912a267d83c495954b24ca07981002fda05ee2ea0b492d8fc188d1c3e",
+    "bytes": 256
+  },
+  {
+    "path": "assets/redesign/arrow-right.svg",
+    "sha256": "aa0f883acecf63d9140ad7cd51910fa4b723671c400772a3c621c9cc16b1687b",
+    "bytes": 235
+  },
+  {
+    "path": "assets/redesign/mural-company-steel.webp",
+    "sha256": "4992ab3eb68f2ed7056530b6bab52cdb5e69c2b21ab5e62237123af37cf64b65",
+    "bytes": 330548
+  },
+  {
+    "path": "assets/redesign/company-transparent.png",
+    "sha256": "0f77b5935ce07a5318e016d684b208d6617675ec7ece855d0ce53b0c22e0aeaa",
+    "bytes": 3246974
+  },
+  {
+    "path": "assets/redesign/plus.svg",
+    "sha256": "3d20a4b2e00657baeb922bed94f13fbfa288968b738991d047dd252cb64005d8",
+    "bytes": 224
+  },
+  {
+    "path": "assets/redesign/shared-table.webp",
+    "sha256": "05ead08924319649f56e36bb176f66c44d8eb8f22e6d67ebcc9ef3250ab7b24b",
+    "bytes": 166432
+  },
+  {
+    "path": "assets/redesign/moon-stars.svg",
+    "sha256": "7e66ceb986063292c6477a56d693fce015347e02b5159207303657c872d8b373",
+    "bytes": 558
+  },
+  {
+    "path": "assets/redesign/mural-company-parchment.webp",
+    "sha256": "425404fff18b24324fa313a3c79ddaf65ebbd995e42e5c3b0eb22753cded281f",
+    "bytes": 389914
+  },
+  {
+    "path": "assets/redesign/Oswald.ttf",
+    "sha256": "5b38c246e255a12f5712d640d56bcced0472466fc68983d2d0410ec0457c2817",
+    "bytes": 172088
+  },
+  {
+    "path": "assets/redesign/evening-collage.png",
+    "sha256": "0ddb6ef9be2c04953e0dc940f9b43a30d72ba1095ce79222d4cb537db7150df4",
+    "bytes": 1716588
+  },
+  {
+    "path": "assets/redesign/Phosphor-LICENSE",
+    "sha256": "b5b1f1da112d18ea2147decfd48ddc1bf2b5aeb6c265381579340e95b15a2bb2",
+    "bytes": 1071
+  },
+  {
+    "path": "assets/redesign/arrow-up-right.svg",
+    "sha256": "28687c40e5980d0321a33fe5021d2060fa49633d65127f80009f8c44cbe95418",
+    "bytes": 213
+  },
+  {
+    "path": "assets/redesign/porukam-panoramic.png",
+    "sha256": "78daa229cd0d06788d54138b145f39ae6c3bcb3323423bfafc96b91bb4e506ff",
+    "bytes": 1968014
+  },
+  {
+    "path": "assets/redesign/scallop-edge.png",
+    "sha256": "63eaae64c1b5c7840835fec8a5e1dc1cd618ea1f4f582a4996969950b957ee11",
+    "bytes": 531738
+  },
+  {
+    "path": "assets/redesign/fork-knife.svg",
+    "sha256": "3112c12e96d6d491bc0987896f674e5bd2ff9a13b871b92fdd2492b381eb3dbe",
+    "bytes": 554
+  },
+  {
+    "path": "assets/redesign/mural-hands.webp",
+    "sha256": "83a577124d8fa56be83057819b287302a5eb36f193a1f4c9dfe3b60eb30460f0",
+    "bytes": 177586
+  },
+  {
+    "path": "assets/redesign/shared-table-cutout.webp",
+    "sha256": "d6390c48b3b71630cf5920edcdefcc2e04d2667a0cccc405fd523fc5b0f0ee1a",
+    "bytes": 251892
+  },
+  {
+    "path": "assets/redesign/hero-lounge.png",
+    "sha256": "00ded08e55357cfe8103743a0d32610d4babe647d17a583ed8d4a07761db921f",
+    "bytes": 1750145
+  },
+  {
+    "path": "assets/redesign/hookah-company.png",
+    "sha256": "5c9bc73cdd0dee8e8b4f802df23b8dbe8e78d033c06e675cdde448cab41eef1c",
+    "bytes": 2225921
+  },
+  {
+    "path": "assets/redesign/Oswald-OFL.txt",
+    "sha256": "0b2472b17e950b9967818f169f2618b091c0c259d250d2dd8208961c7f5700e1",
+    "bytes": 4389
+  },
+  {
+    "path": "assets/redesign/hero-lounge-panoramic.png",
+    "sha256": "8e476db1d17116f86f7df74a054f6e0ee06fb4b01ec6f9df0e60f764309edbf3",
+    "bytes": 1965106
+  },
+  {
+    "path": "assets/redesign/minus.svg",
+    "sha256": "f9be4875a49d6bc9931891127335a396beacb420c7076e068abd9e1505348396",
+    "bytes": 171
+  },
+  {
+    "path": "assets/team/alexey-beer-shot.png",
+    "sha256": "17639cfb4d617713d0e33b4ae3c7a133d0bdadf6e07d453c704fef4702246641",
+    "bytes": 2132741
+  },
+  {
+    "path": "assets/team/ivan-states.png",
+    "sha256": "5fcb96a4ff003a3d044865cdbf9ad621dde658103ecc9d19c858ad4edd54f98b",
+    "bytes": 2148482
+  },
+  {
+    "path": "assets/team/alexey-states.png",
+    "sha256": "3ce90f07d96ed1eba52a7c811455addb92ba3c55a1b2d41913a355fb6c15552a",
+    "bytes": 2033899
+  },
+  {
+    "path": "assets/halls/banquets.pdf",
+    "sha256": "c9d7a87e69a1ad7ec74e20613ec52cb6b604360fac422a303e9fa2ebc8ddb396",
+    "bytes": 14631619
+  }
+]
