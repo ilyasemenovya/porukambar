@@ -11,10 +11,10 @@ staging.mkdir(exist_ok=True)
 def fetch(item):
     path=item['path']
     assert not path.startswith('/') and '..' not in Path(path).parts
-    url='https://porukam-bar-preview.vova234355.chatgpt.site/'+path
+    url='https://porukambar.ru/'+path
     for attempt in range(3):
         try:
-            data=urllib.request.urlopen(url,timeout=90).read()
+            data=urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'}),timeout=90).read()
             if hashlib.sha256(data).hexdigest()!=item['sha256']:
                 raise ValueError('Snapshot mismatch: '+path)
             target=staging/path; target.parent.mkdir(parents=True,exist_ok=True); target.write_bytes(data)
