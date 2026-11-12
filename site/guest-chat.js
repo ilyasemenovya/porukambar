@@ -26,7 +26,7 @@
   function saveToken(value) { token = value; try { value ? sessionStorage.setItem('porukam-chat-session', value) : sessionStorage.removeItem('porukam-chat-session'); } catch (_) {} }
   function identity() {
     login.hidden = !!user; logout.hidden = !user; input.disabled = !user;
-    $('chat-user').textContent = user ? `Вы — ${user.name}` : 'Ваше имя из Telegram будет видно участникам чата.';
+    $('chat-user').textContent = user ? `Вы - ${user.name}` : 'Ваше имя из Telegram будет видно участникам чата.';
     input.placeholder = user ? 'Что нового? Кто сегодня в баре?' : 'Войдите через Telegram, чтобы написать';
     send.disabled = !user || sending || !input.value.trim();
   }

@@ -14,7 +14,7 @@ for(const day of dates){
  dateSelect.add(new Option(`${day} декабря`,value));
  button.addEventListener('click',()=>{dateSelect.value=value;syncDates();document.querySelector('#booking-heading').focus({preventScroll:true});document.querySelector('#request').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});});
 }
-dateSelect.add(new Option('Другая дата — обсудим','other'));
+dateSelect.add(new Option('Другая дата - обсудим','other'));
 function syncDates(){updateBookingPrices();if(dateSelect.value)document.querySelector('.booking-details').open=true;for(const button of grid.children)button.setAttribute('aria-pressed',String(button.dataset.date===dateSelect.value));}
 dateSelect.addEventListener('change',syncDates);
 for(const link of document.querySelectorAll('[data-hall]'))link.addEventListener('click',()=>{document.querySelector('#hall').value=link.dataset.hall;document.querySelector('.booking-details').open=true;});
@@ -67,7 +67,7 @@ function renderMenu(){
  const groups=banquetMenus[activeMenu];
  if(!groups.some(g=>g.id===activeCategory))activeCategory='cold';
  categoryBar.innerHTML=groups.map(g=>`<button type="button" data-category="${g.id}" aria-pressed="${g.id===activeCategory}">${g.label}</button>`).join('');
- document.querySelector('#menu-rate').textContent='На гостя · 25 и 26 декабря — '+money(Number(activeMenu)+300);
+ document.querySelector('#menu-rate').textContent='На гостя · 25 и 26 декабря - '+money(Number(activeMenu)+300);
  const pdf=document.querySelector('#menu-pdf');pdf.href=`assets/menu-${activeMenu}.pdf`;pdf.textContent='Скачать меню '+money(Number(activeMenu))+' · PDF';
  for(const button of document.querySelectorAll('[data-menu]'))button.setAttribute('aria-pressed',String(button.dataset.menu===activeMenu));
  renderDishes();

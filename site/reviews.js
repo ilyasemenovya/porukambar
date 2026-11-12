@@ -49,7 +49,7 @@
       const response = await fetch(config.endpoint, {method:'POST', headers:{'Content-Type':'application/json'}, credentials:'omit', signal:controller.signal, body:JSON.stringify({...payload,request_id:pending.request_id})});
       const result = await response.json(); if (!response.ok || result.ok !== true) throw new Error(result.error || 'Не удалось отправить. Попробуйте ещё раз.');
       form.hidden = true; positive.hidden = true; success.hidden = false; back.hidden = true; form.reset(); pending = null; status.textContent = '';
-    } catch (error) {status.textContent = error.name === 'AbortError' || error instanceof TypeError ? 'Не удалось получить подтверждение отправки. Попробуйте ещё раз — повтор не создаст дубликат.' : error.message;}
+    } catch (error) {status.textContent = error.name === 'AbortError' || error instanceof TypeError ? 'Не удалось получить подтверждение отправки. Попробуйте ещё раз - повтор не создаст дубликат.' : error.message;}
     finally {clearTimeout(timer); sending = false; button.disabled = false; back.disabled = false; ratings.forEach(input => input.disabled = false);}
   });
   $('review-message').addEventListener('input', () => $('review-message').setCustomValidity(''));

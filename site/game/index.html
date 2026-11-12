@@ -3,7 +3,7 @@
 <head>
 <base href="/">
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Не расплескай — игра «По рукам»</title>
+  <title>Не расплескай - игра «По рукам»</title>
   <meta name="description" content="Официант с пивом в баре, столы, стулья, рёбра, бургеры и злодей с табличкой «Тутла». Игра «По рукам»: нажимайте, прыгайте и набирайте очки.">
   <meta name="theme-color" content="#ef5523">
   <link rel="icon" href="assets/brand/logo-dark.svg" type="image/svg+xml">
@@ -14,7 +14,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="По рукам">
 <meta property="og:locale" content="ru_RU">
-<meta property="og:title" content="Не расплескай — игра «По рукам»">
+<meta property="og:title" content="Не расплескай - игра «По рукам»">
 <meta property="og:description" content="Игра бара «По рукам» в Чебоксарах.">
 <meta property="og:url" content="https://porukambar.ru/game">
 <meta property="og:image" content="https://porukambar.ru/assets/brand/logo-light.png">
@@ -22,21 +22,21 @@
 </head>
 <body class="game-body">
   <a class="skip" href="#game">Перейти к игре</a>
-  <header class="game-header"><a class="brand" href="/" aria-label="«По рукам» — главная"><img class="official-logo" src="assets/brand/logo-light.png" width="1600" height="738" alt="По рукам"></a><a class="game-back" href="/">Вернуться в «По рукам» </a></header>
+  <header class="game-header"><a class="brand" href="/" aria-label="«По рукам» - главная"><img class="official-logo" src="assets/brand/logo-light.png" width="1600" height="738" alt="По рукам"></a><a class="game-back" href="/">Вернуться в «По рукам» </a></header>
   <main class="game-main" id="game">
     <div class="game-heading"><div><p class="eyebrow">«По рукам» / Не расплескай</p><h1>Не расплескай</h1></div><p class="mode-label">Тренировочный режим</p></div>
     <div class="game-surface">
       <div class="game-hud"><div class="hud-score"><span>Очки</span><strong id="score">0</strong></div><div class="hud-best"><span>Личный рекорд</span><strong id="best">0</strong></div><button class="pause-button" id="pause" type="button" aria-label="Поставить игру на паузу" disabled>Пауза <span aria-hidden="true">Ⅱ</span></button></div>
       <div class="game-stage" id="stage">
-        <canvas id="canvas" width="960" height="480" tabindex="0" aria-label="Пробежка по бару. Во время игры нажмите пробел, стрелку вверх или экран, чтобы прыгнуть. Escape — пауза.">Для этой игры нужен браузер с поддержкой Canvas. Управление: пробел или кнопка «Прыжок».</canvas>
-        <div class="game-overlay" id="overlay"><div class="overlay-card"><p class="eyebrow" id="overlay-kicker">На низком старте</p><h2 id="overlay-title">Начать игру</h2><p id="overlay-description">Перепрыгивайте мебель, рёбра, бургеры и злодея с табличкой «Тутла». Удачный прыжок — +25, столкновение — конец попытки.</p><p id="run-result" class="run-result" hidden></p><button class="button accent play-button" type="button" id="play" disabled>Открываем бар…</button><p class="overlay-hint" id="overlay-hint">Нажатие на экран или пробел — прыжок</p></div></div>
+        <canvas id="canvas" width="960" height="480" tabindex="0" aria-label="Пробежка по бару. Во время игры нажмите пробел, стрелку вверх или экран, чтобы прыгнуть. Escape - пауза.">Для этой игры нужен браузер с поддержкой Canvas. Управление: пробел или кнопка «Прыжок».</canvas>
+        <div class="game-overlay" id="overlay"><div class="overlay-card"><p class="eyebrow" id="overlay-kicker">На низком старте</p><h2 id="overlay-title">Начать игру</h2><p id="overlay-description">Перепрыгивайте мебель, рёбра, бургеры и злодея с табличкой «Тутла». Удачный прыжок - +25, столкновение - конец попытки.</p><p id="run-result" class="run-result" hidden></p><button class="button accent play-button" type="button" id="play" disabled>Открываем бар…</button><p class="overlay-hint" id="overlay-hint">Нажатие на экран или пробел - прыжок</p></div></div>
       </div>
-      <div class="game-controls"><div class="keyboard-help"><kbd>Пробел</kbd><span>или</span><kbd>↑</kbd><span>— прыжок</span></div><button class="jump-button" id="jump" type="button" disabled>Прыжок <span aria-hidden="true">↑</span></button><span class="points-help">+25 за препятствие</span></div>
+      <div class="game-controls"><div class="keyboard-help"><kbd>Пробел</kbd><span>или</span><kbd>↑</kbd><span>- прыжок</span></div><button class="jump-button" id="jump" type="button" disabled>Прыжок <span aria-hidden="true">↑</span></button><span class="points-help">+25 за препятствие</span></div>
     </div>
     <p class="game-live sr-only" id="announcement" role="status" aria-live="polite"></p>
-    <div class="game-details"><div><p class="eyebrow">Как играть</p><p>Официант бежит по бару с пивом на подносе. Перепрыгивайте столы, стулья, рёбра и бургеры — со временем темп станет быстрее. На пути встречается и злодей с табличкой «Тутла» — его тоже нужно перепрыгнуть. Столкновение с любым препятствием завершает попытку.</p></div><div class="practice-note"><h2>Ваш рекорд</h2><p>Личный рекорд хранится только на этом устройстве. Общего рейтинга и розыгрыша призов пока нет — играем ради лучшей попытки.</p><p class="storage-note" id="storage-note" hidden>В этом браузере рекорд сохранится только до закрытия страницы.</p></div></div>
+    <div class="game-details"><div><p class="eyebrow">Как играть</p><p>Официант бежит по бару с пивом на подносе. Перепрыгивайте столы, стулья, рёбра и бургеры - со временем темп станет быстрее. На пути встречается и злодей с табличкой «Тутла» - его тоже нужно перепрыгнуть. Столкновение с любым препятствием завершает попытку.</p></div><div class="practice-note"><h2>Ваш рекорд</h2><p>Личный рекорд хранится только на этом устройстве. Общего рейтинга и розыгрыша призов пока нет - играем ради лучшей попытки.</p><p class="storage-note" id="storage-note" hidden>В этом браузере рекорд сохранится только до закрытия страницы.</p></div></div>
   </main>
-  <footer class="game-footer"><span>«По рукам» / Льва Толстого, 3</span><a href="/menu">После пробежки — к меню</a></footer>
+  <footer class="game-footer"><span>«По рукам» / Льва Толстого, 3</span><a href="/menu">После пробежки - к меню</a></footer>
   <noscript><div class="noscript-message">Для игры включите JavaScript в браузере. <a href="/">Вернуться на сайт «По рукам»</a></div></noscript>
 </body>
 </html>
