@@ -8,7 +8,7 @@ const money=n=>n.toLocaleString('ru-RU')+' ₽';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const normalized=s=>s.toLocaleLowerCase('ru').replace(/ё/g,'е');
 function renderMenu(){
- $('#categories').innerHTML=groups.map((g,i)=>`<button data-category="${i}" aria-pressed="${i===active}">${esc(g.title)}</button>`).join('');
+ $('#categories').innerHTML=groups.map((g,i)=>`<button data-category="${i}" class="${g.title==='НАСТОЙКИ'||g.title==='ПИВО И СИДР'?'category-highlight':''}" aria-pressed="${i===active}">${esc(g.title)}</button>`).join('');
  const query=normalized($('#search').value.trim());let result='';
  if(active===0&&!query)result='<div class="tincture-banner"><div><h2>Настойки</h2><p>46 вкусов. Выбирайте свой.</p></div><strong>20 мл · 100 ₽<br>40 мл · 190 ₽</strong></div>';
  for(const [gi,g] of groups.entries()){if(!query&&gi!==active)continue;
