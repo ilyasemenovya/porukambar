@@ -3,7 +3,7 @@
   const track = viewport?.querySelector('.opening-ticker-track');
   if (!track) return;
   const groups = [...track.children];
-  const phrase = 'ОТКРЫТИЕ БАРА · 20.11 \u00a0 / \u00a0 ';
+  const phrase = 'НОВОГОДНИЕ КОРПОРАТИВЫ ОТ 3 500 ₽ \u00a0 / \u00a0 ';
   let previousWidth = 0;
   function fit() {
     const width = viewport.clientWidth;
