@@ -22,7 +22,7 @@
     dialog.showModal(); dialog.scrollTop = 0; $('review-message').focus({preventScroll:true});
   });
   if (config.yandexUrl) { $('review-yandex').href = config.yandexUrl; $('review-yandex').hidden = false; $('review-yandex-pending').hidden = true; }
-  $('review-trigger').addEventListener('click', openReview);
+  document.querySelectorAll('#review-trigger, #review-hero-trigger').forEach(trigger => trigger.addEventListener('click', openReview));
   dialog.querySelector('.review-close').addEventListener('click', () => dialog.close());
   dialog.addEventListener('click', event => {if (event.target === dialog) {const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close();}});
   function select(value) {
