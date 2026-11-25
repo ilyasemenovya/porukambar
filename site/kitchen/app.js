@@ -3,7 +3,7 @@
   const groups = window.KITCHEN_MENU, byId = new Map(), $ = s => document.querySelector(s);
   const storageKey = 'porukam-kitchen-cart-v1';
   for (const group of groups) for (const section of group.sections) for (const item of section.items) {
-    for (const variant of item.variants) byId.set(variant.id, {...variant, name:item.name});
+    for (const variant of item.variants) byId.set(variant.id, {...variant, name:item.name, photo:variant.photo || item.photo});
   }
   let cart = {}, active = 0;
   try {
@@ -24,11 +24,11 @@
       for (const [si, section] of group.sections.entries()) {
         const items = section.items.filter(item => !query || normalized([item.name, item.description, section.title, ...item.variants.map(v => v.volume)].join(' ')).includes(query));
         if (!items.length) continue;
-        result += `<section aria-labelledby="section-${gi}-${si}"><div class="section-heading"><h2 id="section-${gi}-${si}">${esc(section.title)}</h2><span>${items.length}</span></div><div class="grid">`;
+        result += `<section aria-labelledby="section-${gi}-${si}"><div class="section-heading"><h2 id="section-${gi}-${si}">${esc(section.title)}</h2><span>${items.length}</span></div>${section.photo ? `<img class="section-photo" src="${esc(section.photo)}" alt="${esc(section.title)} — общая подача" width="960" height="640" loading="lazy" decoding="async">` : ''}<div class="grid">`;
         result += items.map(item => {
           const variant = item.variants[0], selectId = 'choice-' + variant.id;
           const choice = item.variants.length > 1 ? `<label class="portion" for="${esc(selectId)}">Выберите вариант<select id="${esc(selectId)}">${item.variants.map(v => `<option value="${esc(v.id)}">${esc(v.volume)} · ${money(v.price)}</option>`).join('')}</select></label>` : `<span class="portion-weight">${esc(variant.volume)}</span>`;
-          return `<article class="dish"><h3>${esc(item.name)}</h3>${item.description ? `<p class="description">${esc(item.description)}</p>` : ''}<div class="dish-choice">${choice}<button type="button" class="add-dish" data-add="${esc(variant.id)}" aria-label="Добавить ${esc(item.name)}, ${esc(variant.volume)}, ${variant.price} рублей"><span>Добавить</span><strong>${money(variant.price)}</strong><span class="plus" aria-hidden="true">+</span></button></div></article>`;
+          return `<article class="dish">${item.photo ? `<div class="dish-photo"><img src="${esc(item.photo)}" alt="${esc(item.name)}" loading="lazy" decoding="async" width="960" height="640"></div>` : ''}<h3>${esc(item.name)}</h3>${item.description ? `<p class="description">${esc(item.description)}</p>` : ''}<div class="dish-choice">${choice}<button type="button" class="add-dish" data-add="${esc(variant.id)}" aria-label="Добавить ${esc(item.name)}, ${esc(variant.volume)}, ${variant.price} рублей"><span>Добавить</span><strong>${money(variant.price)}</strong><span class="plus" aria-hidden="true">+</span></button></div></article>`;
         }).join('') + '</div></section>';
       }
     }
@@ -60,6 +60,8 @@
   $('#menu').addEventListener('change', event => {
     if (!event.target.matches('select')) return;
     const item = byId.get(event.target.value), button = event.target.closest('.dish').querySelector('[data-add]');
+    const image = event.target.closest('.dish').querySelector('.dish-photo img');
+    if (image && item.photo) image.src = item.photo;
     button.dataset.add = item.id; button.querySelector('strong').textContent = money(item.price);
     button.setAttribute('aria-label', `Добавить ${item.name}, ${item.volume}, ${item.price} рублей`);
   });
@@ -92,3 +94,4 @@
   $('#clear-cart').addEventListener('click', () => { if (confirm('Убрать все блюда из списка?')) { cart = {}; renderCart(); } });
   renderMenu(); update();
 })();
+
