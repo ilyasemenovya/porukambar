@@ -5,15 +5,15 @@
 <meta name="description" content="Меню кухни бара «По рукам»: рёбра, крылья, закуски, бургеры, горячие блюда и десерты. Составы, выход и цены.">
 <meta name="theme-color" content="#ef5523"><link rel="canonical" href="https://porukambar.ru/kitchen/">
 <link rel="icon" href="/assets/brand/logo-dark.svg">
-<link rel="stylesheet" href="/kitchen/style.css?v=photos-20261125"><script src="/kitchen/data.js?v=assorti-approved-20261125" defer></script><script src="/kitchen/app.js?v=photos-20261125" defer></script>
-</head><body>
+<link rel="stylesheet" href="/kitchen/style.css?v=photos-20261125"><script src="/kitchen/data.js?v=assorti-approved-20261125" defer></script><script src="/bar/data.js?v=shared-cart-20261125" defer></script><script src="/menu-cart.js?v=1" defer></script><script src="/kitchen/app.js?v=shared-cart-20261125" defer></script>
+<link rel="stylesheet" href="/menu-cart.css?v=1"></head><body>
 <a class="skip" href="#menu">Перейти к блюдам</a>
 <header><a href="/" aria-label="По рукам, на главную"><img src="/assets/brand/logo-dark.svg" width="180" alt="По рукам"></a><span>Чебоксары<br>Льва Толстого, 3</span></header>
 <main><section class="intro"><p class="eyebrow">ПО РУКАМ · МЕНЮ КУХНИ</p><h1>Что едим?</h1><p>Выберите блюда и покажите список официанту.</p><nav class="menu-switch" aria-label="Кухня и бар"><a href="/kitchen/" aria-current="page">Кухня</a><a href="/bar/">Бар</a><a class="pdf-link" href="/menus/kitchen-2026-11.pdf" target="_blank" rel="noopener">Кухня в PDF</a></nav></section>
 <div class="navigation"><nav id="categories" aria-label="Разделы кухни"></nav><label class="search" for="search">Найти блюдо<input id="search" type="search" placeholder="Название или состав" autocomplete="off"></label></div>
 <div id="menu" tabindex="-1"></div><noscript><p>Чтобы выбирать блюда, включите JavaScript. <a href="/menus/kitchen-2026-11.pdf">Открыть меню кухни в PDF</a></p></noscript>
 <p class="footnote">Наличие блюд уточняйте у официанта. Если у вас есть пищевая аллергия, сообщите об этом при заказе.</p></main>
-<button id="basket" class="basket" type="button" aria-haspopup="dialog" aria-controls="cart">Мой выбор <span id="basket-count">0</span><strong id="basket-total">0 ₽</strong></button>
-<dialog id="cart" aria-labelledby="cart-title"><div class="cart-head"><h2 id="cart-title">Мой выбор кухни</h2><button id="close-cart" class="close" type="button" aria-label="Закрыть список">×</button></div><p class="cart-note">Заказ не отправлен. Покажите этот список официанту.</p><div id="cart-items"></div><div class="total"><span>Итого</span><strong id="total">0 ₽</strong></div><button id="show-waiter" class="primary" type="button">Показать официанту</button><button id="edit-cart" class="primary" type="button" hidden>Изменить выбор</button><button id="clear-cart" class="text-button" type="button">Очистить список</button></dialog>
+<button id="basket" class="basket" type="button" aria-haspopup="dialog" aria-controls="cart">Общая корзина <span id="basket-count">0</span><strong id="basket-total">0 ₽</strong></button>
+<dialog id="cart" aria-labelledby="cart-title"><div class="cart-head"><h2 id="cart-title">Общая корзина</h2><button id="close-cart" class="close" type="button" aria-label="Закрыть список">×</button></div><p class="cart-note">Заказ не отправлен. Покажите этот список официанту.</p><nav class="menu-switch" aria-label="Кухня и бар"><a href="/kitchen/" aria-current="page">Кухня</a><a href="/bar/">Бар</a></nav><div id="cart-items"></div><div class="total"><span>Итого</span><strong id="total">0 ₽</strong></div><button id="show-waiter" class="primary" type="button">Показать официанту</button><button id="edit-cart" class="primary" type="button" hidden>Изменить выбор</button><button id="clear-cart" class="text-button" type="button">Очистить список</button></dialog>
 <p id="status" class="sr" role="status" aria-live="polite"></p></body></html>
 

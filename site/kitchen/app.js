@@ -1,17 +1,7 @@
 (() => {
   'use strict';
-  const groups = window.KITCHEN_MENU, byId = new Map(), $ = s => document.querySelector(s);
-  const storageKey = 'porukam-kitchen-cart-v1';
-  for (const group of groups) for (const section of group.sections) for (const item of section.items) {
-    for (const variant of item.variants) byId.set(variant.id, {...variant, name:item.name, photo:variant.photo || item.photo});
-  }
-  let cart = {}, active = 0;
-  try {
-    const saved = JSON.parse(localStorage.getItem(storageKey));
-    if (saved && typeof saved === 'object') for (const [id, count] of Object.entries(saved)) {
-      if (byId.has(id) && Number.isInteger(count) && count > 0 && count <= 99) cart[id] = count;
-    }
-  } catch {}
+  const groups = window.KITCHEN_MENU, shared = window.PorukamCart, byId = shared.byId, $ = s => document.querySelector(s);
+  let cart = shared.read(), active = 0;
   const money = value => value.toLocaleString('ru-RU') + ' ₽';
   const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const normalized = value => value.toLocaleLowerCase('ru').replace(/ё/g, 'е');
@@ -38,7 +28,6 @@
     return Object.entries(cart).reduce((total, [id, count]) => ({count:total.count + count, sum:total.sum + count * byId.get(id).price}), {count:0, sum:0});
   }
   function update() {
-    try { localStorage.setItem(storageKey, JSON.stringify(cart)); } catch {}
     const total = totals();
     $('#basket-count').textContent = total.count; $('#basket-total').textContent = money(total.sum); $('#total').textContent = money(total.sum);
     $('#show-waiter').disabled = !total.count; $('#clear-cart').hidden = !total.count;
@@ -46,8 +35,8 @@
   function renderCart() {
     $('#cart-items').innerHTML = Object.entries(cart).map(([id, count]) => {
       const item = byId.get(id);
-      return `<article class="cart-row"><div><h3>${esc(item.name)}</h3><p>${esc(item.volume)} · ${money(item.price)} за порцию</p></div><div class="quantity"><button type="button" data-change="${esc(id)}" data-step="-1" aria-label="Убрать одну порцию ${esc(item.name)}">−</button><span>${count} шт.</span><button type="button" data-change="${esc(id)}" data-step="1" aria-label="Добавить одну порцию ${esc(item.name)}" ${count >= 99 ? 'disabled' : ''}>+</button></div><div class="line-total">${money(item.price * count)}</div></article>`;
-    }).join('') || '<p>Список пока пуст. Добавьте блюда из меню.</p>';
+      return `<article class="cart-row"><div><h3>${esc(item.name)}</h3><p>${esc(item.source)} · ${esc(item.volume)} · ${money(item.price)} за порцию</p></div><div class="quantity"><button type="button" data-change="${esc(id)}" data-step="-1" aria-label="Убрать одну порцию ${esc(item.name)}">−</button><span>${count} шт.</span><button type="button" data-change="${esc(id)}" data-step="1" aria-label="Добавить одну порцию ${esc(item.name)}" ${count >= 99 ? 'disabled' : ''}>+</button></div><div class="line-total">${money(item.price * count)}</div></article>`;
+    }).join('') || '<p>Список пока пуст. Добавьте блюда и напитки из меню.</p>';
     update();
   }
   $('#categories').addEventListener('click', event => {
@@ -68,18 +57,17 @@
   $('#menu').addEventListener('click', event => {
     const button = event.target.closest('[data-add]'); if (!button) return;
     const id = button.dataset.add; if (!byId.has(id)) return;
-    cart[id] = Math.min(99, (cart[id] || 0) + 1); update();
+    cart = shared.change(id, 1); update();
     $('#status').textContent = 'Добавлено: ' + byId.get(id).name + '. В списке ' + totals().count;
   });
   $('#cart-items').addEventListener('click', event => {
     const button = event.target.closest('[data-change]'); if (!button) return;
-    const id = button.dataset.change; cart[id] = Math.min(99, cart[id] + Number(button.dataset.step));
-    if (cart[id] <= 0) delete cart[id]; renderCart();
+    const id = button.dataset.change; cart = shared.change(id, Number(button.dataset.step)); renderCart();
     const next = $('#cart-items').querySelector(`[data-change="${id}"][data-step="${button.dataset.step}"]`);
     (next || $('#close-cart')).focus();
   });
   function mode(waiter) {
-    $('#cart').classList.toggle('waiter', waiter); $('#cart-title').textContent = waiter ? 'Для официанта · Кухня' : 'Мой выбор кухни';
+    $('#cart').classList.toggle('waiter', waiter); $('#cart-title').textContent = waiter ? 'Для официанта' : 'Общая корзина';
     $('#show-waiter').hidden = waiter; $('#edit-cart').hidden = !waiter;
   }
   $('#basket').addEventListener('click', () => { mode(false); renderCart(); $('#cart').showModal(); $('#close-cart').focus(); });
@@ -91,7 +79,8 @@
   });
   $('#show-waiter').addEventListener('click', () => { mode(true); $('#cart').scrollTop = 0; $('#edit-cart').focus({preventScroll:true}); });
   $('#edit-cart').addEventListener('click', () => { mode(false); $('#show-waiter').focus(); });
-  $('#clear-cart').addEventListener('click', () => { if (confirm('Убрать все блюда из списка?')) { cart = {}; renderCart(); } });
+  $('#clear-cart').addEventListener('click', () => { if (confirm('Убрать все блюда и напитки из корзины?')) { cart = shared.clear(); renderCart(); } });
+  shared.subscribe(saved => { cart = saved; renderCart(); });
   renderMenu(); update();
 })();
 
