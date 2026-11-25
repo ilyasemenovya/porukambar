@@ -23,3 +23,6 @@ dialog{padding:0;border:0;max-width:560px;width:calc(100% - 32px);color:var(--na
 .header>.header-actions{grid-column:1/-1;grid-row:2;justify-self:center}
 .header>nav{flex-wrap:nowrap}
 }
+
+/* Keep pinch zoom and scrolling; suppress double-tap zoom. */
+html { touch-action: manipulation; }
