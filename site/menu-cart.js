@@ -43,6 +43,7 @@
     },
     clear: () => save({}),
     subscribe(fn) {
+      window.addEventListener('porukam-cart-changed', () => fn(read()));
       window.addEventListener('storage', event => { if (event.key === key || event.key === null) { if (event.newValue === null) memory = {}; fn(read()); } });
       window.addEventListener('pageshow', () => fn(read()));
     }
