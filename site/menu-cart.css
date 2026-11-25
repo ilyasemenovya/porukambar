@@ -3,3 +3,5 @@
 
 /* Keep pinch zoom and scrolling; suppress double-tap zoom. */
 html { touch-action: manipulation; }
+
+.detail-thumbs{display:flex;gap:10px;margin:12px 0 20px}.detail-thumbs[hidden]{display:none}.detail-thumbs button{padding:3px;border:2px solid transparent;border-radius:6px;background:#242321;cursor:pointer}.detail-thumbs button[aria-pressed="true"]{border-color:#f05223}.detail-thumbs img{display:block;width:90px;height:60px;object-fit:cover;border-radius:2px}.detail-thumbs button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
